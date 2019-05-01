@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.layui.api.mapper.UserMapper">
+
+	<!-- <resultMap id="BaseResultMap"
+		type="com.springboot.layui.api.pojo.User">
+		<id column="id" property="id" />
+		<result column="username" property="username" />
+		<result column="birthday" property="birthday" />
+		<result column="sex" property="sex" />
+		<result column="address" property="address" />
+		<result column="password" property="password" />
+		<result column="role"  property="role" />
+	</resultMap> -->
+	<!-- 统计总记录数 -->
+	<select id="findCount" resultType="long">
+		select count(*) from user
+	</select>
+	<!-- 根据分页查询 -->
+	<select id="findUserByPage"  resultType="com.springboot.layui.api.pojo.User">
+		select * from user limit
+		#{page},#{limit}
+	</select>
+</mapper>

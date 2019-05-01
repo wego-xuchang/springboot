@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: springboot-shiro
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: No
+Implementation-Vendor-Id: com.gitboy.springboot
+Build-Jdk: 1.8.0_192
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/springboot/springboot-shiro
+Created-By: Maven Integration for Eclipse
+

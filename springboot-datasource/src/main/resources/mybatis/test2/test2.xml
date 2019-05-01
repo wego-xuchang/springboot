@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.gitboy.springboot.test02.mapper.Test2Mapper">
+
+	<select id="findAllUserTest2" resultType="com.gitboy.springboot.pojo.User">
+		select * from user
+	</select>
+</mapper>
